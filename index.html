@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -36,25 +36,30 @@
     </nav>
 
     <header class="hero">
-        <div class="container">
-            <h1 class="display-1 mb-4" data-aos="fade-up">Yachaywasi Club</h1>
-            <p class="lead mb-5" data-aos="fade-up" data-aos-delay="200">Celebrando y preservando la riqueza cultural del Perú</p>
+        <div id="particles-js"></div>
+        <div class="container hero-content">
+            <h1 class="display-1 mb-4 text-glow" data-aos="zoom-in">Yachaywasi Club</h1>
+            <p class="lead mb-5 floating" data-aos="fade-up" data-aos-delay="200">Celebrando y preservando la riqueza cultural del Perú</p>
             <a href="#about" class="btn btn-lg btn-primary" data-aos="fade-up" data-aos-delay="400">Descubre más</a>
         </div>
     </header>
 
     <main>
-        <section id="about" class="py-5">
+        <section id="about" class="py-5 parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
             <div class="container">
-                <h2 class="section-title text-center" data-aos="fade-up">Sobre Nosotros</h2>
+                <h2 class="section-title text-center text-white" data-aos="fade-up">Sobre Nosotros</h2>
                 <div class="row">
                     <div class="col-md-6 mb-4" data-aos="fade-right">
-                        <h3>Visión</h3>
-                        <p>Convertir a Yachaywasi Club en el principal referente cultural en Perú, promoviendo la revalorización y preservación de las diversas manifestaciones culturales del país.</p>
+                        <div class="card h-100 p-4 rotate-in about-card">
+                            <h3 class="about-card-title">Visión</h3>
+                            <p class="about-card-text">Convertir a Yachaywasi Club en el principal referente cultural en Perú, promoviendo la revalorización y preservación de las diversas manifestaciones culturales del país.</p>
+                        </div>
                     </div>
                     <div class="col-md-6 mb-4" data-aos="fade-left">
-                        <h3>Misión</h3>
-                        <p>Organizar y facilitar eventos culturales que celebren y promuevan la riqueza cultural de Perú, abarcando desde las lenguas y tradiciones indígenas hasta las expresiones artísticas modernas.</p>
+                        <div class="card h-100 p-4 rotate-in about-card">
+                            <h3 class="about-card-title">Misión</h3>
+                            <p class="about-card-text">Organizar y facilitar eventos culturales que celebren y promuevan la riqueza cultural de Perú, abarcando desde las lenguas y tradiciones indígenas hasta las expresiones artísticas modernas.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -69,6 +74,8 @@
                             <i class="fas fa-calendar-alt card-icon mb-3"></i>
                             <h4 class="card-title">Eventos Culturales Integrales</h4>
                             <p class="card-text">Organizamos una variedad de eventos que incluyen música, danza, arte, gastronomía, historia y tradiciones populares.</p>
+                            <p class="card-description">Sumérgete en la rica cultura peruana a través de nuestros festivales, exposiciones y presentaciones artísticas.</p>
+                            <a href="#" class="btn btn-card">Más información</a>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="200">
@@ -76,6 +83,8 @@
                             <i class="fas fa-users card-icon mb-3"></i>
                             <h4 class="card-title">Promoción de la Identidad Cultural</h4>
                             <p class="card-text">Creamos espacios que celebran tanto las tradiciones ancestrales como las innovaciones culturales contemporáneas.</p>
+                            <p class="card-description">Participa en nuestros talleres y charlas para aprender sobre las tradiciones peruanas y desarrollar habilidades artísticas.</p>
+                            <a href="#" class="btn btn-card">Inscríbete ahora</a>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="300">
@@ -83,6 +92,8 @@
                             <i class="fas fa-book-open card-icon mb-3"></i>
                             <h4 class="card-title">Revaloración Cultural</h4>
                             <p class="card-text">Nos enfocamos en la educación y sensibilización del público sobre la importancia de mantener vivas las tradiciones culturales.</p>
+                            <p class="card-description">Explora nuestras exposiciones itinerantes que llevan la cultura peruana a diferentes rincones del país.</p>
+                            <a href="#" class="btn btn-card">Ver calendario</a>
                         </div>
                     </div>
                 </div>
@@ -92,44 +103,35 @@
         <section id="events" class="py-5">
             <div class="container">
                 <h2 class="section-title text-center" data-aos="fade-up">Planificación y Ejecución de Eventos</h2>
-                <div class="row">
-                    <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="card h-100">
-                            <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" class="card-img-top" alt="Festival Cultural">
-                            <div class="card-body">
-                                <h5 class="card-title">Festivales Culturales</h5>
-                                <p class="card-text">Organizamos festivales que integran diferentes aspectos culturales, como música, danza, teatro, cine, y gastronomía.</p>
-                            </div>
-                        </div>
+                <div class="carousel-container" data-aos="fade-up">
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Festival Cultural" class="img-fluid rounded">
                     </div>
-                    <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="card h-100">
-                            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b18d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" class="card-img-top" alt="Taller Cultural">
-                            <div class="card-body">
-                                <h5 class="card-title">Talleres y Charlas</h5>
-                                <p class="card-text">Ofrecemos talleres y charlas que enseñan tanto habilidades tradicionales como contemporáneas.</p>
-                            </div>
-                        </div>
+                    <div class="carousel-item next">
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b18d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Taller Cultural" class="img-fluid rounded">
                     </div>
-                    <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="300">
-                        <div class="card h-100">
-                            <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" class="card-img-top" alt="Exposición Itinerante">
-                            <div class="card-body">
-                                <h5 class="card-title">Exposiciones Itinerantes</h5>
-                                <p class="card-text">Creamos exposiciones que pueden ser llevadas a diferentes partes del país, mostrando la riqueza cultural a audiencias diversas.</p>
-                            </div>
-                        </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Exposición Itinerante" class="img-fluid rounded">
                     </div>
+                    <button class="carousel-control prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-control next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="text-center mt-4">
+                    <h3 class="reveal-text" data-text="Descubre Nuestros Eventos">Descubre Nuestros Eventos</h3>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="py-5 bg-light">
+        <section id="contact" class="py-5 bg-light parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
             <div class="container">
-                <h2 class="section-title text-center" data-aos="fade-up">Contáctanos</h2>
+                <h2 class="section-title text-center text-white" data-aos="fade-up">Contáctanos</h2>
                 <div class="row justify-content-center">
                     <div class="col-md-8" data-aos="fade-up" data-aos-delay="200">
-                        <form>
+                        <form class="card p-4">
                             <div class="mb-3">
                                 <input type="text" class="form-control" placeholder="Nombre" required>
                             </div>
@@ -163,6 +165,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="app.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
