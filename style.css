@@ -1,0 +1,74 @@
+:root {
+    --primary-color: #E63946;
+    --secondary-color: #F1FAEE;
+    --accent-color: #A8DADC;
+    --text-color: #1D3557;
+    --background-color: #FFFFFF;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar-brand, .nav-link {
+    color: var(--secondary-color) !important;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1531968455001-5c5272a41129?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.section-title {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--text-color);
+    border-color: var(--text-color);
+}
+
+#events {
+    background-color: var(--accent-color);
+}
+
+footer {
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+}
