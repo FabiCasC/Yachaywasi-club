@@ -37,19 +37,19 @@ gsap.from(".hero-content", {
     ease: "power3.out"
 });
 
-// Animación de las tarjetas
-gsap.utils.toArray('.card').forEach((card, i) => {
-    gsap.from(card, {
-        scrollTrigger: {
-            trigger: card,
-            start: "top bottom-=100px",
-            toggleActions: "play none none reverse"
-        },
-        opacity: 0,
-        y: 50,
-        duration: 0.6,
-        delay: i * 0.1
-    });
+// Animación optimizada de las tarjetas
+ScrollTrigger.batch(".card", {
+    start: "top 90%", // Empieza cuando la tarjeta está cerca de la vista
+    onEnter: (batch) => {
+        gsap.fromTo(batch, 
+            { opacity: 0, y: 50 }, 
+            { opacity: 1, y: 0, duration: 0.6, stagger: 0.2, ease: "power3.out" }
+        );
+    },
+    onLeaveBack: (batch) => {
+        gsap.to(batch, { opacity: 0, y: 50, duration: 0.6 }); // Opcional: revertir al salir
+    },
+    once: false // Cambiar a `true` si deseas que las animaciones no se repitan
 });
 
 // Animación de la sección de eventos

@@ -6,6 +6,25 @@
     --background-color: #FFFFFF;
 }
 
+.about-card {
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    transform: translateY(0);
+    opacity: 1;
+    will-change: transform, opacity;
+}
+
+.about-card:hover {
+    transform: scale(1.05); /* Pequeño zoom para efecto visual */
+}
+
+.parallax-bg {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+
 @font-face {
     font-family: 'PeruGlyph';
     src: url('https://fonts.googleapis.com/css2?family=Spectral:wght@700&display=swap');
@@ -425,11 +444,11 @@ footer:before {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 .about-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(10px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
 }
 
